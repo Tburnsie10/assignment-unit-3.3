@@ -91,12 +91,20 @@ console.log(sum);
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
 
+let totalParts = 572;
+let boxes = 0;
 
-totParts = 572;
-totalBoxes = totParts / 7;
-console.log(totalBoxes);
-box = 7;
+while( totalParts >= 7) {   // stops when total parts is below 7. The remainder will still be in the total parts variable.
+    
+    totalParts = totalParts - 7; //when every box is filled with 7 parts we then start a new box
+    boxes ++;
+    
+}
 
+console.log(`There were this many boxes filled: ${boxes}`);
+console.log(`There were this many parts remaining: ${totalParts}`);
+
+console.log(572 / 7, 572 % 7 );  // this is the simulation that the while loop is making.
 
     
 
